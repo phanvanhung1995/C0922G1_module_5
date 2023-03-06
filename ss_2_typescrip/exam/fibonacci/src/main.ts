@@ -1,11 +1,12 @@
 let sum = 0;
 let list: Array<number> = [];
-
-function fibonacci(number: number): any {
+list.push(0)
+let fibonacci = (number: number): any => {
 
     let a = 1, b = 0, temp = 0;
-
+    number=number-2;
     while (number >= 0) {
+
         temp = a;
         a = a + b;
         b = temp;
