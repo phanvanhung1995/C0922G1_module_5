@@ -1,7 +1,7 @@
 let sum = 0;
 let list: Array<number> = [];
 list.push(0)
-let fibonacci = (number: number): any => {
+let fibonacci = (number: number): Array<number> => {
 
     let a = 1, b = 0, temp = 0;
     number=number-2;

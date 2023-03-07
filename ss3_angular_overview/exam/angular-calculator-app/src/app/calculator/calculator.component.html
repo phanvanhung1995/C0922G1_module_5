@@ -1,0 +1,37 @@
+<h2>calculator app</h2>
+
+<form class="row g-3">
+  <div class="col-auto">
+    <label>First Number</label>
+  </div>
+  <div class="col-auto">
+
+    <input #firstNumber type="text" class="form-control" id="firstNumber" >
+  </div>
+
+  <div class="col-auto">
+    <label>Second Number</label>
+  </div>
+  <div class="col-auto">
+    <input #secondNumber type="text" class="form-control" id="secondNumber" >
+  </div>
+
+  <div class="col-auto">
+    <button (click)="sum(firstNumber.value,secondNumber.value)" type="button" class="btn btn-primary mb-3">+</button>
+  </div>
+  <div class="col-auto">
+    <button (click)="sub(firstNumber.value,secondNumber.value)" type="button" class="btn btn-primary mb-3">-</button>
+  </div>
+  <div class="col-auto">
+    <button (click)="mult(firstNumber.value,secondNumber.value)" type="button" class="btn btn-primary mb-3">*</button>
+  </div>
+  <div class="col-auto">
+    <button  (click)="share(firstNumber.value,secondNumber.value)" type="button" class="btn btn-primary mb-3">/</button>
+  </div>
+
+</form>
+
+<div>
+  <label> Result : </label>
+  {{result}}
+</div>
