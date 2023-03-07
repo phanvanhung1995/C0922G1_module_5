@@ -10,6 +10,11 @@
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"></script>
     <style>
+        .img {
+            background-image: url("https://thuthuatnhanh.com/wp-content/uploads/2022/05/Background-trang.jpg");
+
+            height: 200px;
+        }
         .get-in-touch {
             max-width: 800px;
             margin: 50px auto;
@@ -89,10 +94,10 @@
         }
     </style>
 </head>
-<body>
+<body class="img">
 
 <section class="get-in-touch">
-    <h1 class="title">FORM CREATE CUSTOMER</h1>
+    <h1 class="title">FORM EDIT CUSTOMER</h1>
     <form class="contact-form row">
 
         <div class="form-field col-lg-6">
@@ -136,32 +141,4 @@
     </form>
 </section>
 </body>
-<script>
-
-    function addVilla() {
-        document.getElementById("facilityFree").style.display = "none";
-        document.getElementById("poolArea").style.display = "inline-block";
-        document.getElementById("standardRoom").style.display = "inline-block";
-        document.getElementById("descriptionOtherConvenience").style.display = "inline-block";
-        document.getElementById("numberOfFloors").style.display = "inline-block";
-    }
-
-    function addRoom() {
-        document.getElementById("poolArea").style.display = "none";
-        document.getElementById("facilityFree").style.display = "none";
-        document.getElementById("standardRoom").style.display = "inline-block";
-        document.getElementById("descriptionOtherConvenience").style.display = "inline-block";
-        document.getElementById("numberOfFloors").style.display = "inline-block";
-    }
-
-    function addHouse() {
-        document.getElementById("standardRoom").style.display = "none";
-        document.getElementById("descriptionOtherConvenience").style.display = "none";
-        document.getElementById("poolArea").style.display = "none";
-        document.getElementById("numberOfFloors").style.display = "none";
-        document.getElementById("facilityFree").style.display = "inline-block";
-    }
-
-</script>
-
 </html>
