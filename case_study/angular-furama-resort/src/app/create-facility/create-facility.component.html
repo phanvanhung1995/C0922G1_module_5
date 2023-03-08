@@ -1,0 +1,66 @@
+<section class="get-in-touch">
+  <h1 class="title">FORM CREATE FACILITY</h1>
+  <form class="contact-form row">
+
+    <div style="text-align: center">
+      <button (click)="addVilla()" style="margin: 20px;width: 20%" type="submit" class="btn btn-primary btn-lg">
+        Villa
+      </button>
+      <button (click)="addRoom()" style="margin: 20px; width: 20%" type="submit" class="btn btn-primary btn-lg">
+        Room
+      </button>
+      <button (click)="addHouse()" style="margin: 20px;width: 20%" type="submit" class="btn btn-primary btn-lg">
+        House
+      </button>
+    </div>
+    <div class="form-field col-lg-6">
+      <input id="name" class="input-text js-input" type="text" required>
+      <label class="label" for="name">Name</label>
+    </div>
+    <div class="form-field col-lg-6 ">
+      <input id="email" class="input-text js-input" type="email" required>
+      <label class="label" for="email">Area</label>
+    </div>
+    <div class="form-field col-lg-6 ">
+      <input id="company" class="input-text js-input" type="text" required>
+      <label class="label" for="company">Cost </label>
+    </div>
+    <div class="form-field col-lg-6 ">
+      <input id="phone" class="input-text js-input" type="text" required>
+      <label class="label" for="phone">Max People </label>
+    </div>
+    <div id="standardRoom" class="form-field col-lg-6 ">
+      <input class="input-text js-input" type="text" required>
+      <label class="label" for="phone">Standard Room </label>
+    </div>
+    <div class="form-field col-lg-6 " id="descriptionOtherConvenience">
+      <input class="input-text js-input" type="text" required>
+      <label class="label" for="phone">Description Other Convenience </label>
+    </div>
+    <div class="form-field col-lg-6 " id="poolArea">
+      <input class="input-text js-input" type="text" required>
+      <label class="label" for="phone">Pool Area </label>
+    </div>
+    <div class="form-field col-lg-6 " id="numberOfFloors">
+      <input class="input-text js-input" type="text" required>
+      <label class="label" for="phone">Number Of Floors </label>
+    </div>
+    <div class="form-field col-lg-6 " id="facilityFree">
+      <input class="input-text js-input" type="text" required>
+      <label class="label" for="phone">Facility Free </label>
+    </div>
+    <div class="form-field col-lg-6 ">
+      <input id="rentType" class="input-text js-input" type="text" required>
+      <label class="label" for="phone">Rent Type </label>
+    </div>
+    <div class="form-field col-lg-12">
+      <input id="message" class="input-text js-input" type="text" required>
+      <label class="label" for="message">Message</label>
+    </div>
+
+
+    <div class="form-field col-lg-12" style="text-align: center">
+      <input class="submit-btn" type="submit" value="save">
+    </div>
+  </form>
+</section>

@@ -1,0 +1,34 @@
+.center {
+  text-align: center;
+  padding: 20px;
+  font-size: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.img {
+  color: blue;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/004/968/002/original/cute-abstract-modern-background-free-vector.jpg");
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px 12px;
+}
+
+.background {
+  color: red;
+  font-size: 200%;
+  background-color: aquamarine;;
+  margin: 0px
+}
+
+
+row {
+  display: flex;
+  flex-wrap: wrap;
+}

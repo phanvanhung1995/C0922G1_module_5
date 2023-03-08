@@ -1,0 +1,16 @@
+.center {
+  text-align: center;
+  padding: 20px;
+  font-size: 100%;
+}
+.font {
+  text-align: center;
+  font-family: Arial;
+  flex: auto;
+  font-size: 17px;
+  padding: 20px;
+}
+.footer {
+  padding-top: 20px;
+  background-color: burlywood;
+}

@@ -1,0 +1,61 @@
+.nav2 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.center {
+  text-align: center;
+  padding: 20px;
+  font-size: 100%;
+}
+
+.font {
+  text-align: center;
+  font-family: Arial;
+  flex: auto;
+  font-size: 17px;
+  padding: 20px;
+}
+
+.footer {
+  padding-top: 20px;
+  background-color: burlywood;
+}
+
+.img {
+  background-image: url("https://tuildonai.com/vnt_upload/project/05_2019/FURAMA.jpg");
+
+  height: 200px;
+}
+
+.o-hide {
+  opacity: 0;
+  transition: all ease 0.8s;
+}
+
+.o-hide:hover {
+  opacity: 1;
+}
+
+.flex-wrap-center {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+
+}
+
+body {
+  background-image: url("https://img5.thuthuatphanmem.vn/uploads/2021/08/25/background-3d-4k_085529380.jpg");
+}

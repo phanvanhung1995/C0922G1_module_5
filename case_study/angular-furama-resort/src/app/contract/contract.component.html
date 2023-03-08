@@ -1,0 +1,112 @@
+<app-header></app-header>
+<app-navbar></app-navbar>
+<h2 class="center background">List Contract</h2>
+<p>
+  <button style="float: left" type="button" class="btn btn-primary btn-lg">
+    <a>Create New Contract</a></button>
+</p>
+
+<table style="text-align: center" class="table table-striped">
+
+  <tr>
+    <th>ID</th>
+    <th>FACILITY</th>
+    <th>CUSTOMER</th>
+    <th>STAR DATE</th>
+    <th>END DATE</th>
+    <th>DEPOSIT</th>
+    <th>TOTAL</th>
+    <th colspan="2"> ATTACH FACILITY</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>villa osean vip</td>
+    <td>phan văn hùng</td>
+    <td>17/7/2022</td>
+    <td>17/7/2023</td>
+    <td>10000</td>
+    <td>1000000</td>
+    <td>
+      <button class="btn btn-primary" data-bs-toggle="modal"
+              data-bs-target="#exampleModal1" type="button">+
+      </button>
+      <button class="btn btn-primary" type="button" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">Danh Sách
+        Dịch Vụ Đi Kèm
+      </button>
+    </td>
+  </tr>
+
+</table>
+
+
+<!--modal danh sách dịch vụ đi kèm-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Danh Sách Dịch Vụ Đi Kèm</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <table style="text-align: center" class="table table-striped">
+          <tr>
+            <th>Name</th>
+            <th>Cost</th>
+            <th>Unit</th>
+            <th>Quantity</th>
+          </tr>
+          <tbody id="showList"></tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--modal + -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel1">Thêm mới dịch vụ đi kèm : </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form>
+        <div class="modal-body">
+
+          <table style="text-align: center" class="table table-striped">
+            <tr>
+              <th></th>
+              <th>Name</th>
+              <th>Quantity</th>
+            </tr>
+            <tr>
+              <td>
+                <input hidden id="contractId">
+              </td>
+              <td>
+                <label>Chọn dịch vụ đi kèm : </label>
+                <select class="form-control">
+                  <option>11111</option>
+                </select>
+              </td>
+              <td>
+                <label>Nhập số lượng : </label>
+                <input class="form-control">
+              </td>
+            </tr>
+          </table>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-secondary" data-bs-dismiss="modal">Save</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
