@@ -115,14 +115,13 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form th:object="${contractDetailDto}" th:action="@{/contract/addAttachFacility}" method="post">
+                <form>
                     <div></div>
                     <div class="mb-3 row">
                         <label class="col-sm-2 col-form-label">Dịch Vụ</label>
                         <div class="col-sm-10">
-                            <select th:field="*{attachFacility}" id="attachFacilityAdd" class="form-control">
-                                <option th:each="facility : ${attachFacility}" th:text="${facility.name}"
-                                        th:value="${facility.id}"></option>
+                            <select class="form-control">
+                                <option></option>
                             </select>
                         </div>
                     </div>
