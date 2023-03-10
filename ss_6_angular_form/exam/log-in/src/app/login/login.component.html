@@ -1,0 +1,59 @@
+<form  [formGroup]="rfLogin" novalidate>
+  <div class=" form-group">
+    <label for="email"> Email : </label>
+    <input formControlName="email" type="text" name="" id="email" class="form-control" placeholder=""
+           aria-describedby="helpId">
+    <p *ngIf="rfLogin.controls.email.touched && rfLogin.controls.email?.errors?.required" class="text-danger"> bắt buộc
+      nhập </p>
+    <p *ngIf="rfLogin.controls.email.touched && rfLogin.controls.email?.errors?.email">Định dạng không đúng</p>
+  </div>
+
+  <div class=" form-group">
+    <label for="password"> password : </label>
+    <input formControlName="password" type="text" name="" id="password" class="form-control" placeholder=""
+           aria-describedby="helpId">
+    <p *ngIf="rfLogin.controls.password.touched && rfLogin.controls.password?.errors?.required">bắt buộc phải nhập</p>
+    <p *ngIf="rfLogin.controls.password.touched && rfLogin.controls.password?.errors?.minLength">mật khẩu phải lớn hơn 6
+      ký tự</p>
+  </div>
+
+  <div class=" form-group">
+    <label for="confirmPassword">confirm password : </label>
+    <input formControlName="confirmPassword" type="text" name="" id="confirmPassword" class="form-control"
+           placeholder="" aria-describedby="helpId">
+    <p *ngIf="rfLogin.controls.confirmPassword.touched && rfLogin.controls.confirmPassword?.errors?.required">bắt buộc
+      phải nhập</p>
+    <p
+      *ngIf="rfLogin.controls.confirmPassword.touched && rfLogin.controls.confirmPassword?.value != rfLogin.controls.password?.value">
+      mật khẩu phải giống nhau</p>
+  </div>
+
+  <div class=" form-group">
+    <label  for="country"> country : </label>
+    <input  formControlName="country" type="text" name="" id="country" class="form-control" placeholder="" aria-describedby="helpId">
+<!--    <p *ngIf="rfLogin.controls.country.touched && rfLogin.controls.country?.errors?.required"> Bắt buộc phải nhập</p>-->
+  </div>
+
+  <div class=" form-group">
+    <label for="age"> age : </label>
+    <input formControlName="age" type="text" name="" id="age" class="form-control" placeholder="" aria-describedby="helpId">
+    <p *ngIf="rfLogin.controls.age.touched && rfLogin.controls.age?.errors?.required">bắt buộc
+      phải nhập</p>
+    <p *ngIf="rfLogin.controls.age.touched && rfLogin.controls.age?.errors?.min">Tuổi lớn hơn 18 </p>
+  </div>
+
+  <div class=" form-group">
+    <label > gender : </label>
+    <input type="radio" name="" formControlName="gender" value="nam" class="form-control" placeholder="" aria-describedby="helpId">Nam
+    <input type="radio" name="" formControlName="gender" value="nữ" class="form-control" placeholder="" aria-describedby="helpId">Nữ
+  </div>
+
+  <div class=" form-group">
+    <label for="phone"> phone : </label>
+    <input formControlName="phone" type="text" name="" id="phone" class="form-control" placeholder="" aria-describedby="helpId">
+    <p *ngIf="rfLogin.controls.phone.touched && rfLogin.controls.phone?.errors?.pattern">số điện thoại phải đúng định dạng : +84...</p>
+  </div>
+
+
+  <button [disabled]="rfLogin.invalid" type="submit" class="btn btn-primary"> login</button>
+</form>
