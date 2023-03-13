@@ -1,0 +1,24 @@
+<h2 style="color: red; text-align: center;">Create new Product</h2>
+
+<form [formGroup]="productForm" (ngSubmit)="submid()">
+  <div class="form-group">
+    <label for="id">mã sản phẩm : </label>
+    <input type="number" id="id" class="form-control" formControlName="id" aria-describedby="helpId">
+  </div>
+  <div class="form-group">
+    <label for="name">mã sản phẩm : </label>
+    <input type="text" id="name" class="form-control" formControlName="name" aria-describedby="helpId">
+  </div>
+
+  <div class="form-group">
+    <label for="price">Giá : </label>
+    <input type="number" id="price" class="form-control" formControlName="price" aria-describedby="helpId">
+  </div>
+  <div class="form-group">
+    <label for="description">mô tả : </label>
+    <input type="text" id="description" class="form-control" formControlName="description" aria-describedby="helpId">
+  </div>
+
+
+  <button type="submit" class="btn btn-primary">save</button>
+</form>

@@ -1,0 +1,26 @@
+<h2>list translate</h2>
+
+
+<table class="table">
+  <thead>
+  <tr>
+    <th>stt</th>
+    <th>word</th>
+    <th>mean</th>
+    <th>view</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let word of listWord;index as i">
+    <td scope="row">{{i + 1}}</td>
+    <td>{{word.word}}</td>
+    <td>{{word.mean}}</td>
+    <td>
+      <a routerLink="/detail/{{word.word}}">
+        <button type="button" class="btn btn-primary">view</button>
+      </a>
+
+    </td>
+  </tr>
+  </tbody>
+</table>

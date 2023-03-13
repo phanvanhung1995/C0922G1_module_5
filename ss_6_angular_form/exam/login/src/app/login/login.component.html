@@ -8,7 +8,7 @@
 
   <div class="form-group">
     <label for="password">password</label>
-    <input formControlName="password" type="text" name="" id="password" class="form-control" placeholder="" aria-describedby="helpId">
+    <input formControlName="password" type="password" name="" id="password" class="form-control" placeholder="" aria-describedby="helpId">
     <p *ngIf="formLogin.controls.password.touched && formLogin.controls.password?.errors?.required">Bắt buộc phải nhập</p>
     <p *ngIf="formLogin.controls.password.touched && formLogin.controls.password?.errors?.minLength">mật khẩu nhỏ nhất là 6 ký tự</p>
   </div>

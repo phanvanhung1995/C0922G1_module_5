@@ -10,7 +10,7 @@
 
   <div class=" form-group">
     <label for="password"> password : </label>
-    <input formControlName="password" type="text" name="" id="password" class="form-control" placeholder=""
+    <input formControlName="password" type="password" name="" id="password" class="form-control" placeholder=""
            aria-describedby="helpId">
     <p *ngIf="rfLogin.controls.password.touched && rfLogin.controls.password?.errors?.required">bắt buộc phải nhập</p>
     <p *ngIf="rfLogin.controls.password.touched && rfLogin.controls.password?.errors?.minLength">mật khẩu phải lớn hơn 6
@@ -19,7 +19,7 @@
 
   <div class=" form-group">
     <label for="confirmPassword">confirm password : </label>
-    <input formControlName="confirmPassword" type="text" name="" id="confirmPassword" class="form-control"
+    <input formControlName="confirmPassword" type="password" name="" id="confirmPassword" class="form-control"
            placeholder="" aria-describedby="helpId">
     <p *ngIf="rfLogin.controls.confirmPassword.touched && rfLogin.controls.confirmPassword?.errors?.required">bắt buộc
       phải nhập</p>
