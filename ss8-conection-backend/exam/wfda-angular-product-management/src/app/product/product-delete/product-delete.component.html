@@ -3,19 +3,23 @@
   <table>
     <tr>
       <td>Mã sản phẩm:</td>
-      <td><input type="number" formControlName="id"></td>
+      <td><input value="{{product.id}}" readonly type="number"  formControlName="id"></td>
     </tr>
     <tr>
       <td>Tên sản phẩm:</td>
-      <td><input type="text" formControlName="name"></td>
+      <td><input  value="{{product.name}}" readonly type="text" formControlName="name"></td>
     </tr>
     <tr>
       <td>Giá sản phẩm</td>
-      <td><input type="number" formControlName="price"></td>
+      <td><input value="{{product.price}}" readonly  type="number" formControlName="price"></td>
     </tr>
     <tr>
       <td>Mô tả về sản phẩm</td>
-      <td><input type="text" formControlName="description"></td>
+      <td><input value="{{product.description}}" readonly  type="text" formControlName="description"></td>
+    </tr>
+    <tr>
+      <td>loại sản phẩm</td>
+      <td><input value="{{product.category.name}}" readonly  type="text" formControlName="description"></td>
     </tr>
     <tr>
       <td></td>
