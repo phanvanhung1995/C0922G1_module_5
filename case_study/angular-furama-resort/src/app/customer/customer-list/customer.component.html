@@ -18,16 +18,17 @@
     <th>DELETE</th>
     <th>VIEW</th>
   </tr>
-  <tr>
-    <td>1</td>
-    <td>phan văn hùng</td>
-    <td>17/07/1995</td>
-    <td>nam</td>
-    <td>187541711</td>
-    <td>0921093190</td>
-    <td>phanvanhung1224@gmail.com</td>
-    <td>thanh chương, nghệ an</td>
-    <td>vip</td>
+  <tr *ngFor="let customer of customers; index as i">
+    <td>{{i+1}}</td>
+    <td>{{customer.name}}</td>
+    <td>{{customer.dateOfBirth}}</td>
+    <td>{{customer.gender}}</td>
+    <td>{{customer.idCard}}</td>
+    <td>{{customer.phoneNumber}}</td>
+    <td>{{customer.email}}</td>
+    <td>{{customer.address}}</td>
+    <td>{{customer.type}}</td>
+
     <td>
       <button class="btn btn-outline-primary">
         <a style="color: red; text-decoration: none">Edit</a>

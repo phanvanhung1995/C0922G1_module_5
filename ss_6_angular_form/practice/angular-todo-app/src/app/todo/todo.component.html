@@ -1,9 +1,19 @@
 <h2 class="text-center">Todo App</h2>
+
+
 <div>
-  <input type="text" class="form-control" [formControl]="content" (change)="change()">
-  <ul>
-    <li (click)="toggle(i)" [class.complete] = "todo.complete" *ngFor="let todo of todos;index as i">
-      {{todo.content}}
+
+  <input type="text" class="form-control" [formControl]="content">
+  <button (click)="addTodo()" type="submit" class="btn btn-primary">save</button>
+
+  <ul *ngFor="let todo of todos;index as i">
+    <li (click)="toggle(i)" [class.complete]="todo.complete">
+      id:  {{todo.id}} <br>
+      content:  {{todo.content}} <br>
     </li>
+    <button routerLink="/edit/{{todo.id}}" type="submit" class="btn btn-primary">sửa</button>
+    <button (click)="deleteTodo(todo.id)" style="color: white;background-color: red" type="button"
+            class="btn btn-primary">xóa
+    </button>
   </ul>
 </div>

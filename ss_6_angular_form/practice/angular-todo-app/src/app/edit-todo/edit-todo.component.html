@@ -1,0 +1,19 @@
+<form [formGroup]="todoForm" (ngSubmit)="updateForm()">
+  <div class="form-group">
+    <input formControlName="id" type="text"  id="id" class="form-control" placeholder=""
+           aria-describedby="helpId" value="{{todo.id}}" hidden>
+  </div>
+
+  <div class="form-group">
+    <label for="content">content</label>
+    <input formControlName="content" type="text" name="" id="content" class="form-control" placeholder=""
+           aria-describedby="helpId" value="{{todo.content}}">
+  </div>
+
+  <div class="form-group">
+    <input formControlName="complete" type="text" name="" id="complete" class="form-control" placeholder=""
+           aria-describedby="helpId" value="{{todo.complete}}" hidden>
+  </div>
+
+  <button type="submit" class="btn btn-primary">save</button>
+</form>
